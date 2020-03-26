@@ -1,0 +1,13 @@
+#lastParagraph {
+    display: flex;
+    flex-flow: row;
+    height: 200px;
+}
+
+#kittenPicture {
+    width: 400px;
+}
+
+#footer {
+    position: absolute;
+}
