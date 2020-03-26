@@ -1,78 +1,12 @@
 @import url("about_me.css");
 @import url("blogs.css");
+@import url("index.css");
 @import url("fonts.css");
+
+* {
+    text-align: center;
+}
 
 body {
     background: aqua;
-}
-
-/* For everything larger than phones */
-.blogPostsList {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template:
-        "blog1 blog2"
-        "blog3 blog4";
-}
-
-
-/*For phones*/
-@media (max-width: 700px) {
-    .blogPostsList {
-        background: lightgreen;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: minmax(100px, auto);
-        grid-template:
-            "blog1"
-            "blog2"
-            "blog3"
-            "blog4";
-    }
-}
-
-header {
-    grid-area: header;
-}
-
-.blogPostLink {
-    /*background: cadetblue;*/
-    background-size: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    border: 2px solid darkgray;
-    box-shadow: 5px 5px dimgray;
-}
-
-#blog1 {
-    background-image: url("../images/corgi_puppy.jpg");
-    grid-area: blog1;
-}
-
-#blog2 {
-    background-image: url("../images/ggg_boxer.jpg");
-    grid-area: blog2;
-}
-
-#blog3 {
-    background-image: url("../images/mount_everest.jpg");
-    grid-area: blog3;
-}
-
-#blog4 {
-    background-image: url("../images/tenth_planet_logo.jpg");
-    grid-area: blog4;
-}
-
-
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: footer;
 }
