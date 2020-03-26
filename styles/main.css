@@ -1,0 +1,27 @@
+@import url("about_me.css");
+@import url("blogs.css");
+
+/*For phones up to 900px*/
+@media (max-width: 700px) {
+    body {
+        display: grid;
+        grid-template-rows: 900px;
+        grid-template:
+            "header"
+            "body"
+            "aside"
+            "footer";
+    }
+}
+header {
+    grid-area: header;
+}
+.blogPostsList {
+    grid-area: body;
+}
+aside {
+    grid-area: aside;
+}
+footer {
+    grid-area: footer;
+}
