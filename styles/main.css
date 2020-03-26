@@ -2,20 +2,21 @@
 @import url("blogs.css");
 @import url("fonts.css");
 
-
-/*For tablets*/
-@media (max-width: 1100px) {
-    .blogPostsList {
-        background: aqua;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-        grid-template:
-            "blog1 blog2"
-            "blog3 blog4";
-    }
+body {
+    background: aqua;
 }
+
+/* For everything larger than phones */
+.blogPostsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template:
+        "blog1 blog2"
+        "blog3 blog4";
+}
+
 
 /*For phones*/
 @media (max-width: 700px) {
@@ -43,7 +44,8 @@ header {
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
-    border: 2px solid red;
+    border: 2px solid darkgray;
+    box-shadow: 5px 5px dimgray;
 }
 
 #blog1 {

@@ -2,6 +2,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+figcaption {
+    font-size: 0.75em;
+}
+
 h1 {
     font-family: 'PT Serif', serif;
     font-size: 30px;
